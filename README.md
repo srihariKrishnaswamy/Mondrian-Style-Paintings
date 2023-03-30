@@ -1,18 +1,17 @@
-## Getting Started
+README
+Mondrian-Style Artificial Art Generator
+This project is an implementation of an algorithmic art generator that creates images in the style of the 20th century Dutch abstract artist, Piet Mondrian.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The program starts with a blank canvas of a given width and height and repeatedly breaks the canvas into smaller and smaller regions until the regions are below a certain size. The program follows specific rules that attempt to emulate some of the techniques used by Mondrian. Once a region is below a certain size, it is filled in with a color chosen randomly from red, yellow, cyan, and white. This project uses a complex recursion algorithm to acheive this.
 
-## Folder Structure
+Program Behavior
+The algorithm for generating images follows the following rules:
 
-The workspace contains two folders by default, where:
+If the region being considered is at least one-fourth the height of the full canvas and at least one-fourth the width of the full canvas, split it into four smaller regions by choosing one vertical and one horizontal dividing line at random.
+If the region being considered is at least one-fourth the height of the full canvas, split it into two smaller regions by choosing a horizontal dividing line at random.
+If the region being considered is at least one-fourth the width of the full canvas, split it into two smaller regions by choosing a vertical dividing line at random.
+If the region being considered is smaller than one-fourth the height of the full canvas and smaller than one-fourth the width of the full canvas, do not split the region.
+Any time a region is split, the dividing line(s) are chosen at random to be within the bounds of the region. The algorithm ensures that dividing lines are chosen such that each resulting subregion is at least 10 pixels by 10 pixels.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Once a region is below a certain size, it is filled in with a color chosen randomly from red, yellow, cyan, and white. When filling a region, a one-pixel border around the edge is left uncolored to give the appearance of black lines separating the colored regions.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
