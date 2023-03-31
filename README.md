@@ -21,3 +21,5 @@ In order to run this program:
 2. navigate to the src file in terminal 
 3. in terminal, type 'javac App.java'
 4. then type 'java App'
+
+https://www.oracle.com/java/technologies/downloads/
