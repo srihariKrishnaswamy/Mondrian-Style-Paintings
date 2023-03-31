@@ -15,3 +15,9 @@ Any time a region is split, the dividing line(s) are chosen at random to be with
 
 Once a region is below a certain size, it is filled in with a color chosen randomly from red, yellow, cyan, and white. When filling a region, a one-pixel border around the edge is left uncolored to give the appearance of black lines separating the colored regions.
 
+Running this program:
+In order to run this program:
+1. clone the repository by, in terminal, typing 'git clone ' and then the repo link
+2. navigate to the src file in terminal 
+3. in terminal, type 'javac App.java'
+4. then type 'java App'
