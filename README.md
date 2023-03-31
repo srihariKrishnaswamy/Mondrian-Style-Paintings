@@ -22,4 +22,4 @@ In order to run this program:
 3. in terminal, type 'javac App.java'
 4. then type 'java App'
 
-https://www.oracle.com/java/technologies/downloads/
+If this doesn't work, you may have to install the Java Development Kit (JDK). Please do so here: https://www.oracle.com/java/technologies/downloads/
